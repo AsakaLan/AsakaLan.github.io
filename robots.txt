@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: http://asakalan.github.io/sitemap.xml
