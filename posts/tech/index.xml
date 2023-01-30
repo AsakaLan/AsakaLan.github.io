@@ -8,12 +8,39 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 05 May 2022 00:18:15 +0800</lastBuildDate><atom:link href="http://asakalan.github.io/posts/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Leetcode刷题总结</title>
+      <link>http://asakalan.github.io/posts/tech/4/</link>
+      <pubDate>Thu, 05 May 2022 00:18:15 +0800</pubDate>
+      
+      <guid>http://asakalan.github.io/posts/tech/4/</guid>
+      <description>Leetcode刷题记录 过滤器思想 1 2 3 4 5 6 for i,v:=range nums{ if (){ nums[cnt]=v cnt++ } } 核心思想 一个有序的数组 通过条件进行过滤后生成一个新的数组 前缀和思想 leetcode 1248 优美子</description>
+    </item>
+    
+    <item>
       <title>tech</title>
       <link>http://asakalan.github.io/posts/tech/3/</link>
       <pubDate>Thu, 05 May 2022 00:18:15 +0800</pubDate>
       
       <guid>http://asakalan.github.io/posts/tech/3/</guid>
       <description>Deepflow environment 配置 Agent Install Rust 1.curl https://sh.rustup.rs -sSf | sh 2.source $HOME/.cargo/env Install Golang 1.wget https://golang.google.cn/dl/go1.19.5.linux-amd64.tar.gz 2.sudo tar -C /usr/local/ -xzf go1.19.5.linux-amd64.tar.gz 3.cd /usr/local/ 4.echo $PATH 5.sudo nano $HOME/.profile 6.source .profile Golang set Proxy(不然后面下载ibGoReSym下不下来) /etc/profile export GOPROXY=https://goproxy.cn Install Proto</description>
+    </item>
+    
+    <item>
+      <title>递归专题</title>
+      <link>http://asakalan.github.io/posts/tech/huisu/</link>
+      <pubDate>Thu, 05 May 2022 00:18:15 +0800</pubDate>
+      
+      <guid>http://asakalan.github.io/posts/tech/huisu/</guid>
+      <description>子集 思路 循环条件:循环结束 可以使用递归的原因:选和不选的过程可以复用 核心代码 1 2 3 4 5 6 7 8 if i == len(nums){ ans = append(ans, append([]int(nil),chosen...)) return } chosen = append(chosen,nums[i]) recur(i+1,nums,chosen) chosen = chosen[:len(chosen)-1] recur(i+1,nums,chosen)</description>
+    </item>
+    
+    <item>
+      <title>链表专题</title>
+      <link>http://asakalan.github.io/posts/tech/5/</link>
+      <pubDate>Thu, 05 May 2022 00:18:15 +0800</pubDate>
+      
+      <guid>http://asakalan.github.io/posts/tech/5/</guid>
+      <description>环形链表 思路 设置快慢指针，快指针一次走两步，慢指针一次走一步，如果链表有环，则必定相遇，反之则不可以 核心代码 1 2 3 4 5 6 7 8 9 fast:=head for (fast != nil &amp;amp;&amp;amp; fast.Next</description>
     </item>
     
     <item>
